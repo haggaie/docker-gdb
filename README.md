@@ -1,12 +1,16 @@
-# Build
+# GDB docker container
+
+The goal of this container is to wrap an up-to-date version of gdb so that it can be used on older distributions using remote debugging.
+
+## Build
 
     $ docker build --tag=haggaie/gdb - < Dockerfile
 
-# Run
+## Run
 
     $ docker run -it -v $(pwd):$(pwd) --workdir $(pwd) haggaie/gdb
 
-# Remote kernel debugging
+## Remote kernel debugging
 
 See https://www.kernel.org/doc/Documentation/dev-tools/gdb-kernel-debugging.rst
 
